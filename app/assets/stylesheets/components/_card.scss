@@ -1,0 +1,73 @@
+// Card style
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px $box-shadow-black;
+  border-radius: 5px;
+  box-shadow: 0 0 15px $box-shadow-black;
+  margin: 20px;
+}
+
+
+.card-movie {
+  overflow: hidden;
+  height: 120px;
+  background: $white;
+  box-shadow: 0 0 15px $box-shadow-black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.card-movie img {
+  height: 100%;
+  width: 200px;
+  object-fit: cover;
+}
+
+.card-movie h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-movie p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+  color: $black;
+}
+
+.card-movie .card-movie-infos {
+  padding: 16px;
+}
+
+// Card container style
+
+.container-grid {
+  display: grid;
+  margin: auto 20px auto 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+// Card text display text
+.card-display a {
+  text-decoration: none;
+  color: $white
+}
+
+.card-display-delete {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+}

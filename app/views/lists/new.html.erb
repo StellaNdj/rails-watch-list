@@ -1,4 +1,9 @@
-<%= simple_form_for @list do |f| %>
-  <%= f.input :name %>
-  <%= f.button :submit %>
-<% end %>
+<div class="container">
+  <div class="form-container">
+    <%= simple_form_for @list do |f| %>
+      <%= f.input :name %>
+      <%= f.input :photo, as: :file %>
+      <%= f.button :submit, class: 'btn btn-flat' %>
+    <% end %>
+  </div>
+</div>

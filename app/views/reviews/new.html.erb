@@ -1,0 +1,6 @@
+<h1>Your review for the list</h1>
+<%= simple_form_for [@list, @review] do |f| %>
+  <%= f.input :comment, placeholder: 'Enter your comment here' %>
+  <%= f.input :rating %>
+  <%= f.button :submit %>
+<% end %>
